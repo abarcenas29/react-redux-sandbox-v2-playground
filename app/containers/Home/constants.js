@@ -1,0 +1,3 @@
+const DEFAULT_ACTION = 'DEFAULT_ACTION'
+
+export { DEFAULT_ACTION }

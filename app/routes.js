@@ -15,6 +15,16 @@ const LoadAbout = Loadable({
   loading: Loader
 })
 
+const LoadCouter = Loadable({
+  loader: () => import('./Containers/Counter'),
+  loading: Loader
+})
+
+const LoadReduxForm = Loadable({
+  loader: () => import('./Containers/Form'),
+  loading: Loader
+})
+
 const routes = [
   {
     path: '/',
@@ -24,6 +34,14 @@ const routes = [
   {
     path: '/about',
     component: LoadAbout
+  },
+  {
+    path: '/counter',
+    component: LoadCouter
+  },
+  {
+    path: '/redux-form',
+    component: LoadReduxForm
   }
 ]
 
